@@ -1717,7 +1717,7 @@ Transform:
   m_GameObject: {fileID: 1160234425}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.84}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1868,6 +1868,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointageTemps: 0
   textScore: {fileID: 1658739534}
+  textNouveauRecord: {fileID: 1414624140}
+  finPanel: {fileID: 1323915179}
+  inputNom: {fileID: 80056448}
 --- !u!1 &1284063332
 GameObject:
   m_ObjectHideFlags: 0
@@ -1950,7 +1953,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1284063335}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1276045975}
+        m_TargetAssemblyTypeName: MiniJeu, Assembly-CSharp
+        m_MethodName: ConfirmerNouveauRecord
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1284063335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2583,7 +2598,7 @@ Transform:
   m_GameObject: {fileID: 1487197040}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.84}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
