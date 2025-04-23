@@ -37,5 +37,6 @@ public class MiniJeu : MonoBehaviour
         finPanel.SetActive(false);
         string nom = inputNom.text;
         PlayerPrefs.SetString("nomJoueur", nom);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
